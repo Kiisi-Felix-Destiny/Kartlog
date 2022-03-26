@@ -1,0 +1,86 @@
+.pop-up{
+    position:absolute;
+    width:31rem;
+    height:12rem;
+    background:#eee;
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-35%) scale(1);
+    z-index:1000;
+    border-radius: 3px;
+    border:1px solid rgb(89, 84, 167);
+    box-shadow: 2px 2px 12px 2px rgb(0,0,0,.4);
+    animation:pop-up 500ms linear;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    backface-visibility: hidden;
+}
+@keyframes pop-up{
+    from{
+        transform:translate(-50%,-35%) scale(0);
+    }
+    to{
+        transform:translate(-50%,-35%) scale(1);
+    }
+}
+
+.pop-up--wrapper{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.pop-up--header-wrapper{
+    width:100%;
+    display:flex;
+    align-items:center;
+    height:3.5rem;
+}
+.pop-up--header{
+    color:rgb(69, 63, 153);
+    width:90%;
+    font-size:1.9rem;
+    font-weight:500;
+    display: flex;
+    justify-content:center;
+    cursor:pointer;
+}
+.pop-up--cancel:hover{
+    background:rgb(93, 88, 172);
+    color:white;
+    border:1px solid rgb(69, 63, 153);
+}
+.pop-up--cancel{
+    cursor:pointer;
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    border:1px solid #ddd;
+}
+.pop-up-output-wrapper{
+    width:100%;
+    height:65%;
+    position:relative;
+    display:flex;
+    justify-content: center;
+}
+.pop-up--output{
+    width:96%;
+    height: 100%;
+    background:rgb(93, 88, 172);
+    border-radius: 10px;
+    color:white;
+    overflow-y:auto;
+    word-wrap: break-word;
+    padding:3px 5px;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    font-size:1.6rem;
+    pointer-events: none;
+}
+.pop-up--output::-webkit-scrollbar{
+    width:4px;
+    background:#eee;
+}
