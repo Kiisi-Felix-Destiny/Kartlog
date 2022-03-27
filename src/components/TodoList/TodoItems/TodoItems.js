@@ -14,7 +14,7 @@ class TodoItems extends Component{
     keyUpHandler = () =>{
         let inputVal = this.inputElem.value
     
-        if(inputVal.trim() == ''){
+        if(inputVal.trim() === ''){
             this.setState({
                 items:this.state.items,
                 dis:true

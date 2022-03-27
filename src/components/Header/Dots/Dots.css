@@ -13,6 +13,9 @@
 .dots:hover{
     background:#ddd;
 }
+.dots:hover .dots-children>div{
+    background:rgb(69, 63, 153);
+}
 .dots-wrapper{
     width:inherit;
     height:inherit;
@@ -29,7 +32,7 @@
 .dots-children>div{
     width:3px;
     height:3px;
-    background:rgb(69, 63, 153);
+    background:rgb(162, 156, 240);
     margin:3px;
     border-radius: 50%;
 }

@@ -1,7 +1,7 @@
 .header{
     width:100%;
     height:6rem;
-    background:#aaa;
+    background:#666;
     position:relative;
 }
 .header-name{
@@ -10,5 +10,5 @@
     left:2%;
     transform: translate(-2%,-50%);
     font-size:2.3rem;
-    color:rgb(69, 63, 153);
+    color:rgb(162, 156, 240);
 }

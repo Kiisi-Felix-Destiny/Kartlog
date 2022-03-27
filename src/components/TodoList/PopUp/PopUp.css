@@ -10,7 +10,7 @@
     border-radius: 3px;
     border:1px solid rgb(89, 84, 167);
     box-shadow: 2px 2px 12px 2px rgb(0,0,0,.4);
-    animation:pop-up 500ms linear;
+    animation:pop-up 500ms forwards linear;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     backface-visibility: hidden;
 }
