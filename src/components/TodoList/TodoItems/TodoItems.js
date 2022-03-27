@@ -88,7 +88,7 @@ class TodoItems extends Component{
                 <div className="todo-items">
 
                 <PopUp displayBool={displayBool} cancelHandler={this.cancelHandler} dbTextContent={this.props.dbTextContent}/>
-                    <ul className="todo-items-ul">
+                    <ul className="todo-items-ul no_highlights">
                         {
                             this.state.items.map(data=>{
                                 return <li className="todo-items-data"
