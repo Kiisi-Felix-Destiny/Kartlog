@@ -1,18 +1,19 @@
 import React from 'react'
 import './App.css';
-import TodoList from './components/TodoList/TodoList'
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer'
+import Main from './components/Main/Main';
+import Navbar from './components/Navbar/Navbar';
 
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <TodoList/>
-      <Footer/>
-    </div>
-  );
+const App = () =>{
+
+
+	return (
+		<div className="app">
+			<Navbar/>
+			<Main/>
+		</div>
+	);
 }
+
 
 export default App;

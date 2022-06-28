@@ -1,0 +1,55 @@
+.fashion{
+    width:92%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding-top:10rem;
+    padding-bottom: 5rem;
+    max-width: 1400px;
+}
+
+.fashion_content{
+    max-width:40rem;
+    width:100%;
+}
+
+.fashion_content_header h1{
+    font-size:var(--fontSizeBig);
+    color:var(--blue);
+    line-height:4.5rem;
+}
+.fashion_content_header{
+    padding-bottom: 2.8rem;
+}
+
+.fashion_content_items{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.fashion_content_items:nth-child(3){
+    padding-bottom: 3rem;
+}
+.fashion_content_items .check{
+    width:2.5rem;
+    height:2.5rem;
+    margin-top: 5px;
+}
+.fashion_content_items .item{
+    width:calc(100% - 4rem);
+    height:auto;
+    font-size:1.35rem;
+    line-height: 3rem;
+    color:var(--black);
+}
+
+.fashion_image_wrapper{
+    display:flex;
+    align-items:center;
+}
+.fashion_image{
+    height:40rem;
+}
+.fashion_image img{
+    height:100%;
+}
+
