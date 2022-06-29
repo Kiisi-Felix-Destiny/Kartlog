@@ -1,10 +1,11 @@
 import React from 'react'
-import Activity from './Activity/Activity'
+
+import Fashion from './Fashion/Fashion'
+{/*import Activity from './Activity/Activity'
 import Benefits from './Benefits/Benefits'
 import Contact from './Contact/Contact'
 import Digital from './Digital/Digital'
-import Fashion from './Fashion/Fashion'
-import GetStarted from './GetStarted/GetStarted'
+import GetStarted from './GetStarted/GetStarted'*/}
 
 const Main = () => {
   return (
