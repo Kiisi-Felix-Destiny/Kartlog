@@ -58,9 +58,6 @@
 
 @media screen and (max-width:768px){
     .fashion{
-        width:95%;
-    }
-    .fashion{
         grid-template-columns: 100%;
         grid-row-gap:4rem; 
     }  
