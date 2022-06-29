@@ -15,7 +15,7 @@ const Benefits = () => {
         <div className="benefits_header">
           <h1>BENEFITS</h1>
         </div>
-        <div className="benefits_section">
+        <div className="benefits_section benefits_section_f">
           <div className="benefits_section_header">
             <h1>Fashion Designers</h1>
             <p>You can now digitalize all your business operation</p>
@@ -53,7 +53,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        <div className="benefits_section">
+        <div className="benefits_section benefits_section_l">
           <div className="benefits_section_header">
             <h1>Customers</h1>
             <p>You can now digitalize your bespoke shopping experience</p>
