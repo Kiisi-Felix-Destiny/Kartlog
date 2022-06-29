@@ -2,9 +2,9 @@
     width:92%;
     display:grid;
     grid-template-columns: 50% 50%;
-    padding-top:10rem;
+    padding-top:16rem;
     padding-bottom: 5rem;
-    max-width: 1400px;
+    max-width: 1350px;
 }
 
 .fashion_content{
@@ -48,8 +48,31 @@
 }
 .fashion_image{
     height:40rem;
+    width:100%;
 }
 .fashion_image img{
     height:100%;
+    width:100%;
 }
 
+@media screen and (max-width:1024px){
+    .fashion{
+        width:95%;
+    }
+}
+@media screen and (max-width:768px){
+    .fashion{
+        width:95%;
+    }
+    .fashion{
+        grid-template-columns: 100%;
+        grid-row-gap:4rem;
+    }  
+    .fashion_image_wrapper{
+        grid-row: 1/2;
+    }
+    .fashion_content{
+        max-width:100%;
+    }
+      
+}
