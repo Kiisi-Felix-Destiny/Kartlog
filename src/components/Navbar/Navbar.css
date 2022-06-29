@@ -42,8 +42,3 @@
     box-shadow: 0 2px 3px 3px rgb(0 0 0 / 10%);
 }
 
-@media screen and (max-width:1024px){
-    .nav{
-        width:95%;
-    }
-}

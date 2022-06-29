@@ -55,11 +55,7 @@
     width:100%;
 }
 
-@media screen and (max-width:1024px){
-    .fashion{
-        width:95%;
-    }
-}
+
 @media screen and (max-width:768px){
     .fashion{
         width:95%;
