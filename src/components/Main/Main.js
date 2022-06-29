@@ -4,6 +4,7 @@ import Fashion from './Fashion/Fashion'
 import Digital from './Digital/Digital'
 import Benefits from './Benefits/Benefits'
 import Activity from './Activity/Activity'
+import GetStarted from './GetStarted/GetStarted'
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
         <Digital/>
         <Benefits/>
         <Activity/>
+        <GetStarted/>
     </div>
   )
 }
