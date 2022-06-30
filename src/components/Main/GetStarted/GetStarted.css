@@ -128,12 +128,15 @@
     .get-started_content--group:first-child{
         justify-content: center;
         display:flex;
-        padding-bottom:2rem;
+        padding-bottom:4rem;
     }
     .get-started_content--group:last-child{
         display:flex;
         justify-content: center;
         padding-left: 0;
+    }
+    .card_wrapper:first-child{
+        margin-bottom: 4rem;
     }
 }
 @media screen and (max-width:468px){
