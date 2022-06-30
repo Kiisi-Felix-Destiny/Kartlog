@@ -8,12 +8,14 @@
 }
 
 .fashion_content{
-    max-width:40rem;
+    max-width:60rem;
     width:100%;
 }
 
 .fashion_content_header h1{
-    font-size:var(--fontSizeBig);
+    font-size:calc(var(--fontSizeBig) + .5rem);
+    max-width:48rem;
+    width:100%;
     color:var(--blue);
     line-height:4.5rem;
 }

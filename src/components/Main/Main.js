@@ -5,6 +5,7 @@ import Digital from './Digital/Digital'
 import Benefits from './Benefits/Benefits'
 import Activity from './Activity/Activity'
 import GetStarted from './GetStarted/GetStarted'
+import Contact from './Contact/Contact'
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <Benefits/>
         <Activity/>
         <GetStarted/>
+        <Contact/>
     </div>
   )
 }
