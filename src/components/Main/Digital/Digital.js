@@ -22,7 +22,7 @@ const Fashion = () => {
                             <div className="check"><span class="material-icons">check_circle</span></div>
                             <div class="item">Makes selling seamless and allow you concentrate on what you do best, creating better fashion designs</div>
                         </div>
-                        <div className="btn">Get App Now</div>
+                        <div className="btn btn-popup">Get App Now</div>
                     </div>
                 </div>
             </div>

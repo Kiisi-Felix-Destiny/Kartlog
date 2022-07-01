@@ -38,7 +38,7 @@ const Navbar = () => {
                     <img src={Logo} alt="Kartlog"/>
                 </div>
                 <div className="nav_btn">
-                    <div className="btn btn-res">Get App Now</div>
+                    <div className="btn btn-res btn-popup">Get App Now</div>
                 </div>
             </nav>
         </div>

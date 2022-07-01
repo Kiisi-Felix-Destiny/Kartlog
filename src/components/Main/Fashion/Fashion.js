@@ -1,7 +1,11 @@
 import React from 'react'
 import './Fashion.css'
 import img from '../../Images/Div1.svg'
+
 const Fashion = () => {
+
+   
+  
     return (
         <div className="fashion">
             <div className="fashion_content_wrapper">
@@ -22,7 +26,7 @@ const Fashion = () => {
                             <div className="check"><span className="material-icons">check_circle</span></div>
                             <div className="item">Kartlog offers affordable material pickup and delivery across Africa</div>
                         </div>
-                        <div className="btn">Get App Now</div>
+                        <div className="btn btn-popup">Get App Now</div>
                     </div>
                 </div>
             </div>

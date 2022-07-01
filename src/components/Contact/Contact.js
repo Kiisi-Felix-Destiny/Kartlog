@@ -24,7 +24,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact_box">
-                    <div className="contact-form">
+                    <div className="contact-form_wrap">
                         <ContactForm/>
                     </div>
                 </div>
