@@ -1,12 +1,33 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import './Popup.css'
 
 const Popup = () => { 
 
+  const [textDay, setTextDay] = useState(0)
+  const [texthr, setTextHr] = useState(0);
+  const [textMin, setTextMin] = useState(0);
+  const [textSec, setTextSec] = useState(0);
+
+  setInterval(()=>{
+
+    const futureDate = new Date("July 7, 2022 00:00:00").getTime()
+    const presentDate = new Date()
+    const countDate = futureDate - presentDate
+  
+    const sec = 1000
+    const min = sec * 60
+    const hr = min * 60
+    const day = hr * 24
+  
+    setTextDay(Math.floor(countDate / day))
+    setTextHr(Math.floor((countDate % day) / hr))
+    setTextMin(Math.floor((countDate % hr) / min))
+    setTextSec(Math.floor((countDate % min) / sec))
+  }, 1000)
+
   let p = useRef()
   useEffect(()=>{
     let popup = p.current
-    console.log(popup)
 
     const popupBtn = document.querySelectorAll(".btn-popup");	
     const btnFunc = () =>{
@@ -47,19 +68,19 @@ const Popup = () => {
           <div className="popup-time-wrapper">
             <div className="popup-time">
               <div className="popup-time-box">
-                <div className="popup-time-box-digit">60</div>
+                <div className="popup-time-box-digit">{textDay}</div>
                 <div className="popup-time-box-text">Days</div>
               </div>
               <div className="popup-time-box">
-                <div className="popup-time-box-digit">00</div>
+                <div className="popup-time-box-digit">{texthr}</div>
                 <div className="popup-time-box-text">Hours</div>
               </div>
               <div className="popup-time-box">
-                <div className="popup-time-box-digit">60</div>
+                <div className="popup-time-box-digit">{textMin}</div>
                 <div className="popup-time-box-text">Minutes</div>
               </div>
               <div className="popup-time-box">
-                <div className="popup-time-box-digit">60</div>
+                <div className="popup-time-box-digit">{textSec}</div>
                 <div className="popup-time-box-text">seconds</div>
               </div>
             </div>

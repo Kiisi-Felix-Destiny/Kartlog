@@ -9,6 +9,7 @@
     display:none;
     place-items: center;
     backface-visibility: hidden;
+    padding:1rem;
 }
 .popup-container.show{
     display:grid;
@@ -20,7 +21,7 @@
     border-radius: 10px;
     padding:2.5rem;
     transform:scale(1);
-    animation: popupEffect 150ms;
+    animation: popupEffect 250ms;
     opacity:1;
 }
 @keyframes popupEffect{
@@ -41,6 +42,7 @@
 }
 .popup-cancel span{
     color:var(--black);
+    cursor:pointer;
 }
 .popup-details{
     height:auto;
@@ -111,6 +113,7 @@
     border-radius: 15px;
     display:grid;
     place-items: center;
+    cursor:pointer;
 }
 .popup-details-content-subscribe span{
     color:#fff !important;
