@@ -84,6 +84,7 @@
     background:transparent;
     caret-color: var(--blue);
     color:var(--black);
+    text-overflow: ellipsis;
 }
 .popup-details-content-input input:first-child{
     width:40%;
@@ -142,4 +143,16 @@
 }
 .popup-time-box-digit{
     font-size:2.5rem;
+}
+@media screen and (max-width:450px){
+    .popup-details-content-input input{
+        height:100%;
+        padding-left: .5rem;
+    }
+    .popup-details-content-subscribe{
+        width:5rem;
+    }
+    .popup-details-content-input{
+        width:calc(100% - 6rem);
+    }
 }
