@@ -4,6 +4,8 @@ import footerImg from '../Images/Kartlogowhite.svg'
 import * as Fa from 'react-icons/fa'
 
 const Footer = () => {
+
+  
   return (
     <div className="footer-container">
       <div className="footer-wrapper">
@@ -16,7 +18,7 @@ const Footer = () => {
               <p>A fashion hub for on-demand bespoke clothing</p>
             </div>
             <div className="footer-main-h2">
-              <h2>Contact us</h2>
+              <a href="/contact"><h2>Contact us</h2></a>
             </div>
           </div>
           <div className="footer-sub">
@@ -29,9 +31,9 @@ const Footer = () => {
           </div>
           <div className="footer-social-wrapper">
             <div className="footer-social">
-              <div className="footer-social-icons"><Fa.FaFacebookF /></div>
-              <div className="footer-social-icons"><Fa.FaInstagram /></div>
-              <div className="footer-social-icons"><Fa.FaTwitter /></div>
+              <a href="https://www.facebook.com/KartlogNigeria" target="_blank"rel="noreferrer"><div className="footer-social-icons"><Fa.FaFacebookF/></div></a>
+              <a href="https://twitter.com/KartlogNG" target="_blank"rel="noreferrer"><div className="footer-social-icons"><Fa.FaInstagram /></div></a>
+              <a href="https://www.instagram.com/kartlogng" target="_blank"rel="noreferrer"><div className="footer-social-icons"><Fa.FaTwitter /></div></a>
             </div>
           </div>
         </div>
