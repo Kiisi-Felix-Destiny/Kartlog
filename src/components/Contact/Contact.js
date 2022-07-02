@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css';
 import ContactForm from './ContactForm/ContactForm';
-import call from '../../Images/call.svg'
+import call from '../Images/call.svg'
 
 const Contact = () => {
     return (
