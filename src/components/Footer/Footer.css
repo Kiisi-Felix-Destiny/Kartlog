@@ -53,13 +53,19 @@
     font-weight: 200;
     font-size:1.5rem;
     border-top: 1px solid #fff;
-    display:flex;
-    align-items:center;
+    display:grid;
     padding:1rem 1rem;
-    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+}
+.footer-copyright-wrapper{
+    place-items: normal left;
 }
 .footer-copyright{
     padding:1rem 0;
+}
+.footer-social-wrapper{
+    display:grid;
+    place-items: normal right;
 }
 .footer-social{
     width:100%;
@@ -88,6 +94,11 @@
 }
 @media screen and (max-width:468px){
     .footer-bottom{
-        flex-direction:column;
+        grid-template-columns: 100%;
+        height: auto;
+    }
+    .footer-social-wrapper{
+        grid-row:1/2;
+        place-items: normal left;
     }
 }

@@ -24,11 +24,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <div className="footer-copyright">2022 Kartlog. All right reserved</div>
-          <div className="footer-social">
-            <div className="footer-social-icons"><Fa.FaFacebookF/></div>
-            <div className="footer-social-icons"><Fa.FaInstagram/></div>
-            <div className="footer-social-icons"><Fa.FaTwitter/></div>
+          <div className="footer-copyright-wrapper">
+            <div className="footer-copyright">2022 Kartlog. All right reserved</div>
+          </div>
+          <div className="footer-social-wrapper">
+            <div className="footer-social">
+              <div className="footer-social-icons"><Fa.FaFacebookF /></div>
+              <div className="footer-social-icons"><Fa.FaInstagram /></div>
+              <div className="footer-social-icons"><Fa.FaTwitter /></div>
+            </div>
           </div>
         </div>
       </div>
