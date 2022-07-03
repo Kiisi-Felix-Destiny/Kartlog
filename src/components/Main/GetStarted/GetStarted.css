@@ -35,7 +35,8 @@
     justify-content: center;
 }
 .get-started_header{
-    width:30rem;
+    max-width:30rem;
+    width:100%;
     padding-bottom:5rem;
 }
 .get-started_header h3{
@@ -46,7 +47,7 @@
 .get-started_header h1{
     font-size: calc(var(--fontSizeBig) + .5rem);
     color:var(--blue);
-    font-weight:800;
+    font-weight:900;
 }
 
 
@@ -143,5 +144,10 @@
 @media screen and (max-width:468px){
     .get-started_header h1{
         font-size:2.8rem;
+    }
+    .get-started_header{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
     }
 }

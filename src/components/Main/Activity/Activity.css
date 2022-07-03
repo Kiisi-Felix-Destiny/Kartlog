@@ -19,7 +19,9 @@
 .activity_content h1{
     font-size:calc(var(--fontSizeBig) + .5rem);
     color:var(--blue);
-    width:28rem;
+    font-weight:900;  
+    max-width:30rem;
+    width:100%;
     height:auto;
     padding-bottom:var(--paddingBig);
 }
