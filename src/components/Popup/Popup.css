@@ -91,6 +91,7 @@
     border-bottom: none;
     border-left: none;
     border-top: none;
+    padding-right:.5rem;
     border-right:1px solid rgba(0, 0, 0, 0.4)
 }
 .popup-details-content-input input:last-child{
@@ -155,4 +156,103 @@
     .popup-details-content-input{
         width:calc(100% - 6rem);
     }
+}
+@media screen and (max-width:360px){
+    .popup-wrapper{
+        max-width: 100%;
+        padding:1rem;
+    }
+    .popup-details-content-input-wrapper{
+        height:10rem;
+        width:100%;
+        border-radius:15px;
+        padding:.5rem;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        border:1px solid var(--blue);
+        flex-direction:column;
+    }
+    
+    .popup-details-content-input{
+        width:calc(100% - 7rem);
+        border-radius:15px;
+        height:4rem;
+        border-bottom:1px solid var(--blue);
+    }
+    .popup-details-content-input{
+        display:flex;
+        align-items: center;
+        width:100%;
+    }
+    .popup-details-content-input input{
+        height:100%;
+        padding-left: .5rem;
+        outline:none;
+        background:transparent;
+        caret-color: var(--blue);
+        color:var(--black);
+        text-overflow: ellipsis;
+    }
+    .popup-details-content-input input:first-child{
+        width:50%;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+        padding-right:.5rem;
+        border-right:1px solid var(--blue);
+    }
+    .popup-details-content-input input:last-child{
+        width:50%;
+        border:none;
+    }
+    .pop-details-content-text{
+        padding-top:1rem;
+        display:grid;
+        place-items:center;
+        font-size: 1.8rem;
+        color:var(--black);
+        font-weight:600;
+        padding-bottom: 1.5rem;
+        text-align:center;
+    }
+    
+    .popup-details-content-subscribe{
+        width:4.5rem;
+        height:4rem;
+        background:var(--blue);
+        border-radius: 15px;
+        display:grid;
+        place-items: center;
+        cursor:pointer;
+    }
+    .popup-details-content-subscribe span{
+        color:#fff !important;
+    }
+    
+    .popup-time-wrapper{
+        width:100%;
+        display:grid;
+        place-items: center;
+    }
+    .popup-time{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .popup-time-box{
+        width:6rem;
+        height:6rem;
+        background:var(--pink);
+        padding:1rem;
+        border-radius: 12px;
+        display:grid;
+        place-items: center;
+        color:#fff;
+        font-weight: 700;
+    }
+    .popup-time-box-digit{
+        font-size:2.2rem;
+    }
+    
 }

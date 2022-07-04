@@ -55,8 +55,8 @@ const Popup = () => {
             <div className="popup-details-content">  
               <div className="popup-details-content-input-wrapper">
                 <div className="popup-details-content-input">
-                  <input type="text" name="firstName" placeholder="First name"/>
-                  <input type="text" name="firstName" placeholder="Enter your email address"/>
+                  <input type="text" name="firstName" placeholder="First name"autoComplete="off"/>
+                  <input type="text" name="firstName" placeholder="Enter your email address"autoComplete="off"/>
                 </div>
                 <div className="popup-details-content-subscribe">
                   <span className="material-icons">notifications</span>

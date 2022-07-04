@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Navbar.css'
 import Logo from '../Images/Kartlogoblue.svg'
-
+import {Link} from 'react-router-dom'
 const Navbar = () => {
 
     useEffect(() => {
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="k-wrapper nav-wrapper">
             <nav className="nav">
                 <div className="nav_logo">
-                    <img src={Logo} alt="Kartlog"/>
+                    <Link to="/"><img src={Logo} alt="Kartlog"/></Link>
                 </div>
                 <div className="nav_btn">
                     <div className="btn btn-res btn-popup">Get App Now</div>
