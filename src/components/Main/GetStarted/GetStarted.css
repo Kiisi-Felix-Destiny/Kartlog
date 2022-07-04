@@ -156,6 +156,6 @@
 @media screen and (max-width:370px){
     .get-started_header h1, .get-started_header h3{
         place-items:normal left;
-        text-align: center;
+        text-align: left;
     }
 }
