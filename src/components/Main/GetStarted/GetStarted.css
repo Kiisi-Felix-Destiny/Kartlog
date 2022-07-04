@@ -144,6 +144,9 @@
     .card_wrapper:first-child{
         margin-bottom: 4rem;
     }
+    .get-started_header h1, .get-started_header h3{
+        text-align: center;
+    }
 }
 @media screen and (max-width:468px){
     .get-started_header h1{
@@ -153,5 +156,6 @@
 @media screen and (max-width:370px){
     .get-started_header h1, .get-started_header h3{
         place-items:normal left;
+        text-align: center;
     }
 }
