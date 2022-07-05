@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="k-wrapper nav-wrapper">
+        <div className="k-wrapper nav-wrapper no-highlight">
             <nav className="nav">
                 <div className="nav_logo">
                     <Link to="/"><img src={Logo} alt="Kartlog"/></Link>

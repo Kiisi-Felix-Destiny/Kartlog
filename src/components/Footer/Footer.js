@@ -7,7 +7,7 @@ const Footer = () => {
 
   
   return (
-    <div className="footer-container">
+    <div className="footer-container no-highlight">
       <div className="footer-wrapper">
         <div className="footer">
           <div className="footer-main">

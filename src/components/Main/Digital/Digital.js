@@ -3,7 +3,7 @@ import './Digital.css'
 import img from '../../Images/Div2.svg'
 const Fashion = () => {
     return (
-        <div className="digital">
+        <div className="digital no-highlight">
             <div className="digital_content_wrapper">
                 <div className="digital_content">
                     <div className="digital_content_header">

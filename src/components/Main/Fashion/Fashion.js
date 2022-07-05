@@ -7,7 +7,7 @@ const Fashion = () => {
    
   
     return (
-        <div className="fashion">
+        <div className="fashion no-highlight">
             <div className="fashion_content_wrapper">
                 <div className="fashion_content">
                     <div className="fashion_content_header">
