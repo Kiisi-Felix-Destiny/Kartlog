@@ -12,6 +12,8 @@ const Popup = () => {
   const [email, setEmail] = useState('')
   const subscribe = () => {
     if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()\\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
+      setFirstName('')
+      setEmail('')
       return Swal.fire({
         title: "Warning",
         text: "Invalid Email",
@@ -32,6 +34,8 @@ const Popup = () => {
       .then(res => res.json())
       .then(data => {
         if (data.error) {
+          setFirstName('')
+          setEmail('')
           return Swal.fire({
             title: "Error",
             text: data.error,
@@ -62,7 +66,7 @@ const Popup = () => {
 
   setInterval(() => {
 
-    const futureDate = new Date("July 7, 2022 00:00:00").getTime()
+    const futureDate = new Date("July 14, 2022 00:00:00").getTime()
     const presentDate = new Date()
     const countDate = futureDate - presentDate
 
@@ -80,6 +84,8 @@ const Popup = () => {
 
 
   const cancelHandler = () => {
+    setFirstName('')
+    setEmail('')
     scrollUnLock();
     let popup = p.current
     popup.classList.remove("show")
