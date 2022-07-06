@@ -19,6 +19,7 @@ const Popup = () => {
         text: "Invalid Email",
         icon: "warning",
         confirmButtonText: "OK",
+        confirmButtonColor: "#0777A1",
       });
     }
     fetch("https://kartlog.herokuapp.com/subscribe", {
@@ -41,6 +42,7 @@ const Popup = () => {
             text: data.error,
             icon: "error",
             confirmButtonText: "OK",
+            confirmButtonColor: "#0777A1",
           });
         }
         setFirstName('')
@@ -54,6 +56,7 @@ const Popup = () => {
           text: data.result,
           icon: "success",
           confirmButtonText: "OK",
+          confirmButtonColor: "#0777A1",
         });
       })
       .catch(error => console.log(error))
