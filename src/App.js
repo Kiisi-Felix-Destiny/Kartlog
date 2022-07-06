@@ -9,7 +9,7 @@ import Contact from './components/Contact/Contact'
 
 
 const App = () =>{
-
+	
 	return (
 		<BrowserRouter>
 			<Navbar/>

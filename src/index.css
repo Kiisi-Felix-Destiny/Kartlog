@@ -50,3 +50,6 @@ html{
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;  
 }
+.swal2-container {
+  z-index: X;
+}

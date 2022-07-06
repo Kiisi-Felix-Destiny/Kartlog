@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Navbar.css'
 import Logo from '../Images/Kartlogoblue.svg'
-import {Link} from 'react-router-dom'
+import { scrollUnLock } from '../../scroll/scroll'
 const Navbar = () => {
 
     useEffect(() => {
@@ -29,13 +29,24 @@ const Navbar = () => {
       })
     }, [])
     
+    useEffect(()=>{
+        const popup = document.querySelector('.popup-container')
+	
+        const popupBtn = document.querySelectorAll(".btn-popup");	
+        const btnFunc = () =>{
+          popup.classList.add("show")
+          scrollUnLock();
+        }
+        popupBtn.forEach(n => n.addEventListener('click', btnFunc))
+         
+    }, [])
 
 
     return (
         <div className="k-wrapper nav-wrapper no-highlight">
             <nav className="nav">
                 <div className="nav_logo">
-                    <Link to="/"><img src={Logo} alt="Kartlog"/></Link>
+                    <a href="/"><img src={Logo} alt="Kartlog"/></a>
                 </div>
                 <div className="nav_btn">
                     <div className="btn btn-res btn-popup">Get App Now</div>

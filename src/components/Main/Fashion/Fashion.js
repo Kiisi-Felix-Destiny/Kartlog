@@ -1,9 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Fashion.css'
 import img from '../../Images/Div1.svg'
 
 const Fashion = () => {
 
+    useEffect(()=>{
+        const popup = document.querySelector('.popup-container')
+	
+        const popupBtn = document.querySelectorAll(".btn-popup");	
+        const btnFunc = () =>{
+          popup.classList.add("show")
+        }
+        popupBtn.forEach(n => n.addEventListener('click', btnFunc))
+         
+    }, [])
    
   
     return (

@@ -2,6 +2,7 @@
   "name": "kiisi-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://kartlog.herokuapp.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -12,6 +13,7 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "sweetalert2": "^11.4.20",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
