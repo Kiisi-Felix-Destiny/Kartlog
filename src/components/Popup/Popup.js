@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './Popup.css'
 import Swal from "sweetalert2";
-import { scrollLock, scrollUnLock } from '../../scroll/scroll'
+import {scrollUnLock } from '../../scroll/scroll'
 
 const Popup = () => {
 
