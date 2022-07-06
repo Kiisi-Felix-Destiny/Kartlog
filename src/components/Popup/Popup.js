@@ -6,14 +6,17 @@ import {scrollUnLock } from '../../scroll/scroll'
 const Popup = () => {
 
   let p = useRef()
-
+  let s = useRef()
 
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
   const subscribe = () => {
+    let span = s.current
+    span.classList.add("effect")
     if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()\\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
       setFirstName('')
       setEmail('')
+      span.classList.remove("effect")
       return Swal.fire({
         title: "Warning",
         text: "Invalid Email",
@@ -34,9 +37,12 @@ const Popup = () => {
     })
       .then(res => res.json())
       .then(data => {
+        
         if (data.error) {
           setFirstName('')
           setEmail('')
+          span.classList.remove("effect")
+
           return Swal.fire({
             title: "Error",
             text: data.error,
@@ -50,6 +56,7 @@ const Popup = () => {
         scrollUnLock();
         let popup = p.current
         popup.classList.remove("show")
+        span.classList.remove("effect")
         
         return Swal.fire({
           title: "Successful",
@@ -111,7 +118,7 @@ const Popup = () => {
                 <input type="text" name="email" placeholder="Enter your email address" autoComplete="off" value={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
               <button className="popup-details-content-subscribe" type="submit" onClick={() => subscribe()}>
-                <span className="material-icons">notifications</span>
+                <span className="material-icons"ref={s}>notifications</span>
               </button>
             </div>
             <div className="pop-details-content-text">Get Notified When we launch</div>
