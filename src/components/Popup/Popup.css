@@ -270,3 +270,6 @@
 .swal2-container {
     z-index: 999999 !important;
 }
+.success-kartlog{
+    color:var(--blue);
+}
