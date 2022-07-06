@@ -92,6 +92,12 @@
     place-items:center;
     background:transparent;
 }
+.footer-social-icons:active,
+.footer-social-icons:hover{
+    border:1px solid var(--blue);
+    color:var(--blue);
+}
+
 .footer-social a:link,
 .footer-social a:visited{
     color:#fff;
