@@ -19,7 +19,7 @@ const Popup = () => {
         confirmButtonText: "OK",
       });
     }
-    fetch("/subscribe", {
+    fetch("https://kartlog.herokuapp.com/subscribe", {
       method: 'post',
       headers: {
         "Content-Type": "application/json"
