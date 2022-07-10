@@ -99,7 +99,7 @@ const Popup = () => {
   }
 
   return (
-    <div className="popup-container" ref={p} onClick={cancelHandler}>
+    <div className="popup-container" ref={p} >
       <div className="popup-wrapper no-highlight">
         <div className="popup-cancel">
           <span className="material-icons" onClick={cancelHandler}>close</span>
