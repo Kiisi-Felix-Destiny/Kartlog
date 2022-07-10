@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import './Popup.css'
 import Swal from "sweetalert2";
 import { scrollUnLock } from '../../scroll/scroll'
-
+import Loader from '../../loader/Loader'
 const Popup = () => {
 
   let p = useRef()
@@ -12,7 +12,6 @@ const Popup = () => {
   const [email, setEmail] = useState('')
   const subscribe = () => {
     let span = s.current
-    span.classList.add("effect")
     if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()\\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
       setFirstName('')
       setEmail('')
@@ -113,8 +112,8 @@ const Popup = () => {
             <div className="popup-details-content-wrapper">
               <input type="text" name="firstName" placeholder="First name" autoComplete="off" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
               <input type="text" name="email" placeholder="Enter your email address" autoComplete="off" value={email} onChange={(e) => setEmail(e.target.value)} />
-              <button className="popup-details-content-subscribe" type="submit" onClick={() => subscribe()}>
-                <div><p>Get Notified</p> <span className="material-icons" ref={s}>notifications</span> </div>
+              <button className="popup-details-content-subscribe" type="submit" onClick={() => subscribe()} ref={s}>
+                <div><p>Get Notified</p> <span className="material-icons">notifications</span> </div>
               </button>
             </div>
           </div>
