@@ -124,7 +124,6 @@ body.scroll{
     width:100%;
     display:grid;
     place-items: center;
-    margin:0 auto;
     max-width:38rem;
 }
 .popup-time{
@@ -173,8 +172,15 @@ body.scroll{
         padding: 1rem;
     }
 }
-
-.swal2-container {
+@media screen and (max-width:346px){
+    .popup-time{
+        grid-template-columns: repeat(2, 48%);        
+    }    
+    .popup-wrapper{
+        padding-bottom:1.5rem;
+    }
+}
+    .swal2-container {
     z-index: 999999 !important;
 }
 .success-kartlog{
