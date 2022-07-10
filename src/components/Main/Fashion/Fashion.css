@@ -40,7 +40,7 @@
 .fashion_content_items .item{
     width:calc(100% - 4rem);
     height:auto;
-    font-size:1.35rem;
+    font-size:var(--fontText);
     line-height: 3rem;
     color:var(--black);
 }
