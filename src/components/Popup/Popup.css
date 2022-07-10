@@ -166,6 +166,9 @@
         font-size:2rem;
         font-weight: 700;
     }
+    .popup-details-content-wrapper input{
+        padding: 1rem;
+    }
 }
 
 .swal2-container {
