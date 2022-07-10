@@ -1,8 +1,10 @@
 export const scrollLock = () =>{
     let scrollBody = document.querySelector("body");
-    scrollBody.style.overflow = "hidden"
+    let pop = document.querySelector(".popup-container");
+    scrollBody.classList.add("scroll")
 }
 export const scrollUnLock = () =>{
     let scrollBody = document.querySelector("body");
-    scrollBody.style.overflow = "visible"
+    scrollBody.classList.remove("scroll")
+    
 }

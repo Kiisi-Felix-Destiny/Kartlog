@@ -14,8 +14,8 @@ const Main = () => {
 
     const popupBtn = document.querySelectorAll(".btn-popup");	
     const btnFunc = () =>{
+      scrollLock()
       popup.classList.add("show");
-      scrollLock();
     }
     popupBtn.forEach(n => n.addEventListener('click', btnFunc))
      
