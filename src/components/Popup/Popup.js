@@ -10,8 +10,8 @@ const Popup = () => {
 
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
+  const [jsx, setJsx] = useState({i: true});
   const subscribe = () => {
-    let span = s.current
     if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()\\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
       setFirstName('')
       setEmail('')
@@ -23,6 +23,7 @@ const Popup = () => {
         confirmButtonColor: "#0777A1",
       });
     }
+    setJsx({i: false});
     fetch("https://kartlog.herokuapp.com/subscribe", {
       method: 'post',
       headers: {
@@ -37,10 +38,12 @@ const Popup = () => {
       .then(data => {
 
         if (data.error) {
+          setJsx({i: true})
           setFirstName('')
           setEmail('')
-          span.classList.remove("effect")
-
+          let popup = p.current
+          popup.classList.remove("show")
+          scrollUnLock()
           return Swal.fire({
             title: "Error",
             text: data.error,
@@ -49,11 +52,13 @@ const Popup = () => {
             confirmButtonColor: "#0777A1",
           });
         }
+
+        setJsx({i: true})
         setFirstName('')
         setEmail('')
         let popup = p.current
         popup.classList.remove("show")
-
+        scrollUnLock();
         return Swal.fire({
           title: "Successful",
           text: data.result,
@@ -113,7 +118,7 @@ const Popup = () => {
               <input type="text" name="firstName" placeholder="First name" autoComplete="off" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
               <input type="text" name="email" placeholder="Enter your email address" autoComplete="off" value={email} onChange={(e) => setEmail(e.target.value)} />
               <button className="popup-details-content-subscribe" type="submit" onClick={() => subscribe()} ref={s}>
-                <div><p>Get Notified</p> <span className="material-icons">notifications</span> </div>
+                {jsx.i ? <div ref={s}><p>Get Notified</p> <span className="material-icons">notifications</span> </div> : <Loader/> }
               </button>
             </div>
           </div>
