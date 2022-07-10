@@ -16,7 +16,6 @@ const Popup = () => {
     if (!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()\\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
       setFirstName('')
       setEmail('')
-      span.classList.remove("effect")
       return Swal.fire({
         title: "Warning",
         text: "Invalid Email",
@@ -55,7 +54,6 @@ const Popup = () => {
         setEmail('')
         let popup = p.current
         popup.classList.remove("show")
-        span.classList.remove("effect")
 
         return Swal.fire({
           title: "Successful",

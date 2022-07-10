@@ -13,6 +13,9 @@
     backface-visibility: hidden;
     padding:1rem;
 }
+body.scroll{
+    overflow-y:hidden;
+}
 .popup-container.show{
     display:grid;
 }
