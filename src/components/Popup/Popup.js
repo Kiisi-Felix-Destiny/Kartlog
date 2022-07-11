@@ -1,12 +1,11 @@
 import React, { useRef, useState } from 'react'
 import './Popup.css'
 import Swal from "sweetalert2";
-import { scrollUnLock } from '../../scroll/scroll'
 import Loader from '../../loader/Loader'
 const Popup = () => {
 
   let p = useRef()
-  let s = useRef()
+  let s = document.querySelector("body")
 
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
@@ -23,6 +22,7 @@ const Popup = () => {
         confirmButtonColor: "#0777A1",
       });
     }
+
     setJsx({i: false});
     fetch("https://kartlog.herokuapp.com/subscribe", {
       method: 'post',
@@ -43,7 +43,6 @@ const Popup = () => {
           setEmail('')
           let popup = p.current
           popup.classList.remove("show")
-          scrollUnLock()
           return Swal.fire({
             title: "Error",
             text: data.error,
@@ -58,7 +57,6 @@ const Popup = () => {
         setEmail('')
         let popup = p.current
         popup.classList.remove("show")
-        scrollUnLock();
         return Swal.fire({
           title: "Successful",
           text: data.result,
@@ -67,7 +65,16 @@ const Popup = () => {
           confirmButtonColor: "#0777A1",
         });
       })
-      .catch(error => console.log(error))
+      .catch(error => {
+        setJsx({i: true})
+        return Swal.fire({
+          title: "Error",
+          text: "Check your internet connection",
+          icon: "warning",
+          confirmButtonText: "OK",
+          confirmButtonColor: "#0777A1",
+        });
+      })
   }
 
   const [textDay, setTextDay] = useState(0)
@@ -97,7 +104,6 @@ const Popup = () => {
   const cancelHandler = () => {
     setFirstName('')
     setEmail('')
-    scrollUnLock();
     let popup = p.current
     popup.classList.remove("show")
   }

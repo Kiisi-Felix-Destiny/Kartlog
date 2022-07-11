@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import './Navbar.css'
 import Logo from '../Images/Kartlogoblue.svg'
-import { scrollUnLock } from '../../scroll/scroll'
 const Navbar = () => {
 
     useEffect(() => {
@@ -35,7 +34,6 @@ const Navbar = () => {
         const popupBtn = document.querySelectorAll(".btn-popup");	
         const btnFunc = () =>{
           popup.classList.add("show")
-          scrollUnLock();
         }
         popupBtn.forEach(n => n.addEventListener('click', btnFunc))
          
