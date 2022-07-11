@@ -1,7 +1,7 @@
 .contact-container{
     width:100%;
-    padding-top:10rem;
-    padding-bottom: 4rem;
-    height:40rem;
-    
+    margin-top:14rem;
+    margin-bottom: 7rem;
+    height:60rem;
+    background:lightgreen;
 }
