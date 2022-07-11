@@ -13,9 +13,7 @@
     backface-visibility: hidden;
     padding:1rem;
 }
-.modal-open ::-webkit-scrollbar{
-    z-index: 0;
-}
+
 
 .popup-container.show{
     display:grid;
@@ -182,8 +180,14 @@
     .popup-wrapper{
         padding-bottom:1.5rem;
     }
+    
 }
-    .swal2-container {
+@media screen and (max-width:450px){
+    .popup-details-content-wrapper input{
+        padding:2rem 1rem;
+    }
+} 
+.swal2-container {
     z-index: 999999 !important;
 }
 .success-kartlog{
