@@ -151,6 +151,9 @@ const Popup = () => {
             </div>
           </div>
         </div>
+        <div className="popup-footer">
+          <div className="popup-footer-text"><span>Kartlog </span> - Number of days left to go live</div>
+        </div>
       </div>
     </div>
   )

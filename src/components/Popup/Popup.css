@@ -119,6 +119,7 @@
 .popup-timer{
     width:100%;
     margin: 0 auto;
+    padding-bottom: .8rem;
 }
 .popup-time-wrapper{
     width:100%;
@@ -149,6 +150,17 @@
 }
 .popup-time-box-text{
     font-size:1.3rem;
+}
+.popup-footer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-size:1.4rem;
+    color:var(--black);
+    text-align:center;
+}
+.popup-footer-text span{
+    font-weight:800;
 }
 
 @media screen and (max-width:360px){
