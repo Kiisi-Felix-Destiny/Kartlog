@@ -9,8 +9,8 @@ const Header = () => {
           <img src={kartlog} alt="kartlog-log"/>
         </div>
         <div className="header-main">
-          <h1 className="header-main-1">Buy and sell</h1>
-          <h1 className="header-main-2">Custom-made clothing</h1>
+          <h1>Buy and sell</h1>
+          <h1>Custom-made clothing</h1>
         </div>
         <div className="header-sub">
           <p>A marketplace for fashion designers and fashion lovers</p>
