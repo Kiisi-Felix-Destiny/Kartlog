@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 
 import Fashion from './Fashion/Fashion'
 import Digital from './Digital/Digital'
-import Benefits from './Benefits/Benefits'
+import Features from './Features/Features'
 import Activity from './Activity/Activity'
 import GetStarted from './GetStarted/GetStarted'
 
@@ -24,7 +24,7 @@ const Main = () => {
     <div className="k-wrapper">
         <Fashion/>
         <Digital/>
-        <Benefits/>
+        <Features/>
         <Activity/>
         <GetStarted/>
     </div>
