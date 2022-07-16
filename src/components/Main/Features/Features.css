@@ -28,6 +28,9 @@
 .features-header-sub p{
   font-size:var(--fontText);
 }
+.features-space{
+    padding-top:4rem;
+}
 @media screen and (max-width:880px){
     .features-header-main h1{
         text-align:center;
