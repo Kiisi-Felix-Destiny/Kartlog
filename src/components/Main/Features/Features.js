@@ -2,16 +2,11 @@ import React, {useState} from 'react'
 import './Features.css'
 import { useMediaQuery } from 'react-responsive'
 
-import catalog from '../../Images/catalog.png'
-import safe from '../../Images/safe.png'
-import specialize from '../../Images/specialize.png'
+
 import measurementDesktop from '../../Images/Images-new/measure-desktop.png';
 import paymentDesktop from '../../Images/Images-new/payment-desktop.png';
 import manageDesktop from '../../Images/Images-new/manage-desktop.png';
 import marketDesktop from '../../Images/Images-new/market-desktop.png';
-import catalogDesktop from '../../Images/Images-new/catalog.png';
-import safeDesktop from '../../Images/Images-new/safe.png';
-import specializationDesktop from '../../Images/Images-new/specialization.png';
 
 import FeaturesDesktop from './FeaturesDesktop/FeaturesDesktop'
 import FeaturesMobile from './FeaturesMobile/FeaturesMobile'
@@ -78,7 +73,14 @@ const Features = () => {
             <p>You can now digitalize of your business operation</p>
           </div>
         </div>
-        {isBigScreen ? <FeaturesMobile/> :<FeaturesDesktop imgArray={imgArray} imgNum={imgNum}
+        {isBigScreen ? 
+        <FeaturesMobile
+         id_0={num.id_0} id_1={num.id_1} 
+         id_2={num.id_2} id_3={num.id_3}
+         p_one={p_one} p_two={p_two}
+         p_three={p_three} p_four={p_four}/> 
+        :
+        <FeaturesDesktop imgArray={imgArray} imgNum={imgNum}
          id_0={num.id_0} id_1={num.id_1} 
          id_2={num.id_2} id_3={num.id_3}
          p_one={p_one} p_two={p_two}
