@@ -5,6 +5,7 @@ import Digital from './Digital/Digital'
 import Features from './Features/Features'
 import Activity from './Activity/Activity'
 import GetStarted from './GetStarted/GetStarted'
+import Header from './Header/Header'
 
 const Main = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Main = () => {
    }, [])
   return (
     <div className="k-wrapper">
+        <Header/>
         <Fashion/>
         <Digital/>
         <Features/>

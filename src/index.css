@@ -18,6 +18,7 @@ html{
 }
 
 /* COLORS */
+
 :root{
   --blue: #0777A1;
   --pink: #ff7990;
@@ -25,6 +26,8 @@ html{
   --whiteText:rgb(112, 122, 138);
   --pinkShade1:rgba(252, 228, 236, 1);
   --pinkShade2:rgba(248, 187, 208, 1);
+  --blueEffect:rgba(7, 120, 161, 0.7);
+  --pinkEffect:rgba(255, 121, 143, 0.7);
 }
 /* PADDING */
 :root{

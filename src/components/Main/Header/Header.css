@@ -1,0 +1,5 @@
+.k-header{
+    height:110vh;
+    background:linear-gradient(90deg, var(--blueEffect) , var(--pinkEffect)), url("../../Images/Images-new/header-image.jpeg");
+    width:100%;
+}
