@@ -1,6 +1,8 @@
 import React from 'react'
 import './Header.css'
 import kartlog from '../../Images/Kartlogowhite.svg';
+import appstore from '../../Images/appstore.png'
+import playstore from '../../Images/playstore.png'
 const Header = () => {
   return (
     <header className="k-header">
@@ -14,6 +16,10 @@ const Header = () => {
         </div>
         <div className="header-sub">
           <p>A marketplace for fashion designers and fashion lovers</p>
+        </div>
+        <div className="getapp">
+          <div className="appstore"><img src={appstore} alt='appstore'/></div>
+          <div className="playstore"><img src={playstore} alt='playstore'/></div>
         </div>
       </div>
     </header>
