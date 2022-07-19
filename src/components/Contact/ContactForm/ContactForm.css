@@ -7,29 +7,29 @@
     width:100%;
     max-width:55rem;
     background:#fff;
-    height:55rem;
+    height:auto;
     border-radius:6px;
     padding:3rem;
 }
 .contact-form-small{
     margin-bottom:1.3rem;
 }
-.contact-form-small{
+.contact-form-small, .contact-form-big{
     font-size: 1.4rem;
     color:var(--black);
 }
-.contact-form-small label{
+.contact-form-small label, .contact-form-big label{
     padding-bottom:.5rem;
     display:block;
-    font-weight:500;
+    font-weight:600;
 }
-.contact-form-small .input-box{
+.contact-form-small .input-box, .contact-form-big .input-box{
     display:block;
     width:100%;
     border:1px solid var(--black);
     background:transparent;
     color:var(--black);
-    border-radius: 4px;
+    border-radius: 6px;
     outline:none;
     height:4rem;
     display:flex;
@@ -50,4 +50,49 @@
 }
 .contact-form-small .input-box span{
     padding:0 1rem;
+}
+.contact-form-big .input-box{
+    height:30rem;
+}
+.contact-form-big .input-box textarea{
+    height:inherit;
+    display:block;
+    width:100%;
+    color:var(--black);
+    font-size: var(--fontText);
+    resize:none;
+    border:none;
+    background:transparent;
+    outline:none;
+    padding: 1rem 1rem;
+    font-family:"Inter", sans-serif;
+}
+.contact-form-btn-wrapper{
+    padding-top:3rem;
+    display: flex;
+    justify-content: right;
+}
+.contact-form .input-box span{
+    color:var(--black) !important;
+}
+.contact-form .input-box:hover span{
+    color:var(--blue) !important;
+}
+.contact-form .input-box:hover{
+    border:1px solid var(--blue);
+}
+.contact-form .input-box:hover input, .contact-form .input-box:hover textarea{
+    color:var(--blue);
+}
+@media screen and (max-width:768px){
+    .contact-form{
+        max-width:100%;
+    }
+}
+@media screen and (max-width:468px){
+    .contact-form{
+        border-radius: 0;
+        padding: 3rem 0;
+    }
+    
 }

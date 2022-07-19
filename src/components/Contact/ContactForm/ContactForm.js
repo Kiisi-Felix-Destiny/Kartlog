@@ -25,11 +25,14 @@ const ContactForm = () => {
             <span class="material-icons">mark_email_unread</span><input type="email" id="email" />
           </div>
         </div>
-        <div className="contact-form-small">
-          <label for="email">Message</label>
+        <div className="contact-form-big">
+          <label for="message">Message</label>
           <div class="input-box">
-            <input type="email" id="email" />
+            <textarea type="text" id="message" placeholder="Message" />
           </div>
+        </div>
+        <div className="contact-form-btn-wrapper">
+          <div className="btn">Send Message</div>
         </div>
       </div>
     </div>

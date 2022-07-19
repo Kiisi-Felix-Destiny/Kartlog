@@ -64,3 +64,36 @@
 .contact-main_footer--mail > span{
     color:white !important;
 }
+
+
+@media screen and (max-width:768px){
+    .contact{
+        grid-template-columns: 100%;
+    }
+    .contact-main_wrapper{
+        justify-content: left;
+        padding: 3rem;
+        padding-top:0;
+    }
+    
+    .contact-form{
+        max-width:100%;
+    }
+}
+@media screen and (max-width:468px){
+    .contact-container{
+        background:linear-gradient(var(--blue) 34.9% , #fff 34.9%);
+    }
+    .contact{
+        padding:2rem 0;
+    }
+    .contact-wrapper{
+        background:transparent;
+    }
+    .contact-main_wrapper{
+        padding:3rem 0;
+    }
+    .contact-main{
+        padding-top:2rem;
+    }
+}
